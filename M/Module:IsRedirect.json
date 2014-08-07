@@ -1,0 +1,1 @@
+["local i = {}\n \nfunction i.IsRedirect(frame)\n    local pagename = frame.args[1];\n    if pagename == '' then\n        return '';\n    end\n    \n    local page = mw.title.new(pagename);\n    if page.isRedirect then\n        return 'yes';\n    else\n        return '';\n    end\nend\n \nreturn i;"]
